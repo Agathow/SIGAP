@@ -1923,7 +1923,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (marker) {
             marker.setLatLng([lat, lon]);
         } else {
-            // Gunakan marker SIGAP yang sama dengan halaman detail admin.
             const sigapMarkerIcon = L.divIcon({
                 className: 'sigap-map-marker-wrapper',
                 html: '<div class="sigap-map-marker"><span></span></div>',

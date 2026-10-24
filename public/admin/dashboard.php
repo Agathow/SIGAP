@@ -6,10 +6,6 @@ require_once __DIR__ . '/_layout.php';
 
 require_staff();
 
-/* =========================================================
-   DASHBOARD DATA
-========================================================= */
-
 $sum = $pdo
     ->query("
         SELECT *
@@ -17,7 +13,6 @@ $sum = $pdo
     ")
     ->fetch();
 
-// Ambil jumlah laporan per tanggal dalam 30 hari terakhir.
 $dailyRows = $pdo
     ->query("
         SELECT
@@ -31,8 +26,6 @@ $dailyRows = $pdo
     ")
     ->fetchAll(PDO::FETCH_ASSOC);
 
-// Isi tanggal yang tidak memiliki laporan dengan nilai 0 agar grafik
-// menampilkan rentang 30 hari penuh, bukan hanya tanggal yang ada datanya.
 $dailyByDate = [];
 foreach ($dailyRows as $row) {
     $dailyByDate[$row['d']] = (int) $row['total'];
@@ -76,7 +69,6 @@ admin_header(
 ?>
 
 <style>
-/* Dashboard UI adjustments — scoped to this page only */
 .dashboard-pattern-section {
     padding: 20px 0;
 }

@@ -161,8 +161,6 @@
     font-size: 12px;
 }
 
-
-/* Grid ringkasan laporan */
 .report-detail-fee-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -171,7 +169,6 @@
     width: 100%;
 }
 
-/* Card biaya */
 .report-detail-fee {
     min-width: 0;
     min-height: 130px;
@@ -187,14 +184,12 @@
     gap: 16px;
 }
 
-/* Label card */
 .report-detail-fee small {
     color: #64877c;
     font-size: 14px;
     line-height: 1.4;
 }
 
-/* Nilai card */
 .report-detail-fee strong {
     color: #073b2d;
     font-size: clamp(16px, 1.2vw, 22px);
@@ -204,14 +199,12 @@
     font-variant-numeric: tabular-nums;
 }
 
-/* Tablet */
 @media (max-width: 1050px) {
     .report-detail-fee-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-/* Mobile */
 @media (max-width: 520px) {
     .report-detail-fee-grid {
         grid-template-columns: 1fr 1fr;
@@ -228,7 +221,6 @@
         font-size: 16px;
     }
 }
-
 
 .report-detail-section-title {
     margin: 0 0 12px;
@@ -284,7 +276,6 @@
     overflow-wrap: anywhere;
 }
 
-/* Evidence files */
 .admin-evidence-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr));
@@ -410,10 +401,6 @@
     }
 }
 
-
-/* =========================================================
-   SIGAP — Minimalist Light Map + Custom Green Marker
-========================================================= */
 .report-location-map {
     position: relative;
     width: 100%;
@@ -542,10 +529,6 @@
     }
 }
 
-
-/* =========================================================
-   SIGAP — Location metadata and follow-up polish
-========================================================= */
 .report-location-heading { margin-bottom: 14px; }
 .report-location-heading .muted { margin: 0; line-height: 1.65; }
 .report-location-meta-list { display: grid; gap: 10px; margin: 16px 0 18px; }

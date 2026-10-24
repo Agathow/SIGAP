@@ -25,7 +25,6 @@ $relativePath = ltrim($relativePath, '/');
 $projectRoot = dirname(__DIR__, 2);
 $publicRoot = dirname(__DIR__);
 
-// Support the two path formats used by this project. Never accept arbitrary paths.
 if (str_starts_with($relativePath, 'storage/reports/')) {
     $baseDirectory = realpath($projectRoot . '/storage/reports');
     $candidate = realpath($projectRoot . '/' . $relativePath);
